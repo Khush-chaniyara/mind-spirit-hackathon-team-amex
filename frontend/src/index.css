@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Blood Buddy Pro Design System - Emergency Medical Theme */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 13% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+
+    /* Medical Emergency Red Theme */
+    --primary: 0 84% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 0 84% 65%;
+    --primary-dark: 0 84% 55%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 13% 18%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 0 84% 96%;
+    --accent-foreground: 0 84% 60%;
+
+    /* Emergency Colors */
+    --emergency: 0 84% 60%;
+    --emergency-foreground: 0 0% 100%;
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 0 84% 60%;
+
+    --radius: 0.75rem;
+
+    /* Medical Gradients */
+    --gradient-emergency: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 84% 60%), hsl(340 84% 65%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 14% 98%));
+
+    /* Shadows */
+    --shadow-emergency: 0 10px 30px -10px hsl(0 84% 60% / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(220 13% 18% / 0.1);
+    --shadow-urgent: 0 0 30px hsl(0 84% 60% / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 220 13% 12%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 13% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 13% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 84% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 13% 18%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 220 13% 18%;
+    --muted-foreground: 220 9% 65%;
+
+    --accent: 0 84% 18%;
+    --accent-foreground: 0 84% 95%;
+
+    --border: 220 13% 18%;
+    --input: 220 13% 18%;
+    --ring: 0 84% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .gradient-emergency {
+    background: var(--gradient-emergency);
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .shadow-emergency {
+    box-shadow: var(--shadow-emergency);
+  }
+
+  .shadow-urgent {
+    box-shadow: var(--shadow-urgent);
+    animation: pulse-urgent 2s infinite;
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+}
+
+@keyframes pulse-urgent {
+  0%, 100% {
+    box-shadow: 0 0 30px hsl(0 84% 60% / 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(0 84% 60% / 0.6);
+  }
+}
+
+@keyframes pulse-emergency {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
