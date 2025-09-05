@@ -29,9 +29,9 @@ it is a repo of mind spirit hackathon code of team amex
 **Extras:** 
 
 🤝 Team Amex
-  •	👨‍💻 Khush Chaniyara – full-stack developer
-  •	👨‍💻 priyank kothiya  – 
-  •	👨‍💻 vishal chandravadiya – 
-  •	👨‍💻 parth vekariya –  
-  •	👨‍💻 Bhargav Bhalodiya –
-  •	👨‍💻 Aum nanji – 
+**•	👨‍💻 Khush Chaniyara(team leader) – full-stack developer**
+  •	👨‍💻 priyank kothiya  – frontend developer
+  •	👨‍💻 vishal chandravadiya – backend developer , supporter and github master 
+  •	👨‍💻 parth vekariya –  backend developer
+  •	👨‍💻 Bhargav Bhalodiya – backend developer 
+  •	👨‍💻 Aum nanji – frontend developer 
