@@ -3,7 +3,8 @@
 it is a repo of mind spirit hackathon code of team amex 
 
 <h2>team amex </h2>  
-*A mind-spirit’25 Project by Team Amex*
+
+**mind-spirit’25 Project by Team Amex**
 
 ## 📌 Problem Statement  
 
